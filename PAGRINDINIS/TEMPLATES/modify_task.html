@@ -1,0 +1,31 @@
+<!-- modify_task.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Task</title>
+</head>
+<body>
+    <h1>Modify Task</h1>
+    <form action="/modify_task" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="todo">To Do</option>
+            <option value="in_progress">In Progress</option>
+            <option value="done">Done</option>
+        </select><br><br>
+        
+        <label for="user">User:</label>
+        <input type="text" id="user" name="user"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
